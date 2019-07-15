@@ -16,7 +16,7 @@ Some remarks about configuring Theano: The command
 ```
 python -c 'import theano; print(theano.config)' | less
 ```
-shows your current configuratuions. To change them, create a file `.theanorc` in your `$home`-directory and type
+shows your current configurations. To change them, create a file `.theanorc` in your `$home`-directory and type
 ```
 [global]
 floatX=float32
@@ -34,7 +34,7 @@ Procedure:
 
 - `python test_split.py`: Moves ten percent of the train data to a dataset for testing in `dataset/test/`.
 - `python specs_orig.py`: Creates spectrograms with original method. Don't worry about the warnings.
-- `python ParallelSpectrogram.py`: Creates spetrograms with our method. Check your available ressources.
+- `python ParallelSpectrogram.py`: Creates spectrograms with our method. Check your available ressources.
 - `python train_gauss.py`: Trains a neural net on the spectrograms created with our method. See below for further information.
 - `python train_orig.py`: Trains a neural net using the original parameters. **Important:** Check the configurations in the script. Remarks:
   - You can download noise samples [here](https://box.tu-chemnitz.de/index.php/s/SYRXElhPd6QtA0u) and save them in the specified folder.
